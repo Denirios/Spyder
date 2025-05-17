@@ -1,0 +1,5 @@
+- URL: "https://exemplo.com"
+  path: "/produtos"
+  
+- URL: "https://outro.com"
+  path: "/blog"

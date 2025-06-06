@@ -1,6 +1,6 @@
 # 🕷️ Spyder – Crawler Inteligente com Navegador Real
 
-Projeto desenvolvido por **Adenilton** ([@devdeni](https://github.com/devdeni)) como parte do portfólio pessoal.
+Projeto desenvolvido por **Adenilton** ([@denirios](https://github.com/denirios)) como parte do portfólio pessoal.
 
 **Spyder** é um crawler avançado feito em Python que utiliza um navegador real (headless) via [nodriver](https://github.com/nodriver/nodriver). Ele visita páginas, coleta imagens relevantes, extrai o texto da página e salva tudo em estrutura organizada no disco.
 

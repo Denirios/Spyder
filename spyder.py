@@ -58,7 +58,15 @@ def generate_name_folder(url):
     return f"{slug}-{hash_pequeno}"
 
 async def process_url(link, namepast):
-    browser = await nodriver.start(headless=True)
+    browser = await nodriver.start(
+            headless=True,
+            browser_args=[
+                '--enable-javascript',
+                '--disable-web-security',
+                '--no-sandbox'
+            ]
+        )
+        
     page = await browser.get(link)
     await asyncio.sleep(5)
     
@@ -135,10 +143,17 @@ async def process_url(link, namepast):
 
 async def urls(url_base, filtro):
 
-    browser = await nodriver.start(headless=True)
+    browser = await nodriver.start(
+            headless=True,
+            browser_args=[
+                '--enable-javascript',
+                '--disable-web-security',
+                '--no-sandbox'
+            ]
+        )
     page = await browser.get(url_base)
 
-    await asyncio.sleep(5)
+    await asyncio.sleep(8)
 
     html = await page.get_content()
     from bs4 import BeautifulSoup

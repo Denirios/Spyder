@@ -1,5 +1,5 @@
-- URL: "https://exemplo.com"
-  path: "/produtos"
+- URL: "lojaonline.com"
+  path: "/products"
   
-- URL: "https://outro.com"
-  path: "/blog"
+- URL: "assirtirgratis.com"
+  path: "/moivie"
